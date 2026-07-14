@@ -40,7 +40,7 @@ function LoginPage() {
         }
         try {
             const res = await api.post('/auth/login', formData)
-            const {userId,token, username } = res.data.user
+            const { userId, token, username } = res.data.user
             setUserId(userId)
             setUser(username)
             setToken(token)
